@@ -10,12 +10,12 @@ var app = http.createServer(function(request, response){
     if(pathname==='/'){ //루트일때
         if(title === undefined){    //홈일때
             fs.readdir('./data',function (error,filelist){
-                console.log(filelist);
                 var list = '<ul>';
                 for(var i = 0; i<filelist.length; i++){
-                    list += `<li><a href="${filelist[i]}"></a>${filelist[i]}</li>`;
+                    list += `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
                 }
                 list += '</ul>';
+                console.log(list);
                 var template = `
                 <!doctype html>
                     <html>
@@ -26,18 +26,24 @@ var app = http.createServer(function(request, response){
                     <body>
                       <h1><a href="/">WEB</a></h1>
                       ${list}
+                      
                       <h2>Welcome</h2>
                       <p>hello node.js</p>
-                      </body>
+                    </body>
                     </html>
                  `
                 response.writeHead(200);
                 response.end(template);
             })
         }else{
-            fs.readFile(`data/${queryData.id}`,'utf-8',function(err,description){
-                console.log(description);
-                var template = `
+            fs.readdir('./data',function (error,filelist){
+                var list = '<ul>';
+                for(var i = 0; i<filelist.length; i++){
+                    list += `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
+                }
+                list += '</ul>';
+                fs.readFile(`data/${title}`,'utf-8',function (err, description){
+                    var template = `
                     <!doctype html>
                     <html>
                     <head>
@@ -46,18 +52,16 @@ var app = http.createServer(function(request, response){
                     </head>
                     <body>
                       <h1><a href="/">WEB</a></h1>
-                      <ul>
-                        <li><a href="/?id=HTML">HTML</a></li>
-                        <li><a href="/?id=CSS">CSS</a></li>
-                        <li><a href="/?id=JavaScript">JavaScript</a></li>
-                      </ul>
+                      ${list}
                       <h2>${title}</h2>
                       <p>${description}</p>
-                      </body>
+                    </body>
                     </html>
                   `
-                response.writeHead(200);
-                response.end(template);
+                    response.writeHead(200);
+                    response.end(template);
+                });
+
             });
         }
     }else{ //에러날때
