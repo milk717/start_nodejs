@@ -2,6 +2,24 @@ var http = require('http');
 var fs = require('fs')
 var url = require('url');
 
+function templateHTML(title, list, description){
+    return `
+            <!doctype html>
+            <html>
+            <head>
+              <title>WEB1 - ${title}</title>
+              <meta charset="utf-8">
+            </head>
+            <body>
+              <h1><a href="/">WEB</a></h1>
+              ${list}
+              <h2>${title}</h2>
+              <p>${description}</p>
+            </body>
+            </html>
+          `;
+}
+
 var app = http.createServer(function(request, response){
     var _url = request.url;
     var queryData = (url).parse(_url,true).query;
@@ -16,22 +34,7 @@ var app = http.createServer(function(request, response){
                 }
                 list += '</ul>';
                 console.log(list);
-                var template = `
-                <!doctype html>
-                    <html>
-                    <head>
-                      <title>WEB1 - Welcome</title>
-                      <meta charset="utf-8">
-                    </head>
-                    <body>
-                      <h1><a href="/">WEB</a></h1>
-                      ${list}
-                      
-                      <h2>Welcome</h2>
-                      <p>hello node.js</p>
-                    </body>
-                    </html>
-                 `
+                var template = templateHTML("Welcome",list,"Hello node.js!");
                 response.writeHead(200);
                 response.end(template);
             })
@@ -43,21 +46,7 @@ var app = http.createServer(function(request, response){
                 }
                 list += '</ul>';
                 fs.readFile(`data/${title}`,'utf-8',function (err, description){
-                    var template = `
-                    <!doctype html>
-                    <html>
-                    <head>
-                      <title>WEB1 - ${title}</title>
-                      <meta charset="utf-8">
-                    </head>
-                    <body>
-                      <h1><a href="/">WEB</a></h1>
-                      ${list}
-                      <h2>${title}</h2>
-                      <p>${description}</p>
-                    </body>
-                    </html>
-                  `
+                    var template = templateHTML(title,list,description);
                     response.writeHead(200);
                     response.end(template);
                 });
