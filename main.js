@@ -55,6 +55,9 @@ var app = http.createServer(function(request, response){
                 response.end(template);
             });
         }
+    }else if(pathname === '/create'){
+        fs.readdir
+
     }else{ //error
         response.writeHead(404);
         response.end('Not found');
