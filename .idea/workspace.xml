@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2f14fac-75dd-4d61-a35d-bb2da691e123" name="변경" comment="crud" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ae9rFjI4Pz8gnWZitcuNmqJyeW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.15.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.41" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LInDaSoo\source\start_nodejs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.main.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c2f14fac-75dd-4d61-a35d-bb2da691e123" name="변경" comment="" />
+      <created>1655359383175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655359383175</updated>
+      <workItem from="1655359384325" duration="9048000" />
+      <workItem from="1655388909376" duration="2732000" />
+      <workItem from="1655430145346" duration="6171000" />
+      <workItem from="1655532096587" duration="5175000" />
+      <workItem from="1655617046592" duration="784000" />
+      <workItem from="1655617845392" duration="3784000" />
+      <workItem from="1655646964542" duration="699000" />
+      <workItem from="1655701129992" duration="1473000" />
+    </task>
+    <task id="LOCAL-00001" summary="파일리스트 불러오기">
+      <created>1655390830824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655390830824</updated>
+    </task>
+    <task id="LOCAL-00002" summary="파일리스트 불러와서 화면구성">
+      <created>1655391645835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655391645835</updated>
+    </task>
+    <task id="LOCAL-00003" summary="함수로 바꾸기">
+      <created>1655432508763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655432508763</updated>
+    </task>
+    <task id="LOCAL-00004" summary="파일리스트도 함수로">
+      <created>1655439061400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655439061400</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create">
+      <created>1655564003257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655564003257</updated>
+    </task>
+    <task id="LOCAL-00006" summary="객체사용">
+      <created>1655617566639</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655617566639</updated>
+    </task>
+    <task id="LOCAL-00007" summary="모듈">
+      <created>1655618010665</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655618010665</updated>
+    </task>
+    <task id="LOCAL-00008" summary="crud">
+      <created>1655624988617</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655624988617</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="파일리스트 불러오기" />
+    <MESSAGE value="파일리스트 불러와서 화면구성" />
+    <MESSAGE value="함수로 바꾸기" />
+    <MESSAGE value="파일리스트도 함수로" />
+    <MESSAGE value="create" />
+    <MESSAGE value="객체사용" />
+    <MESSAGE value="모듈" />
+    <MESSAGE value="crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud" />
+  </component>
+</project>
